@@ -12,6 +12,7 @@ let isDragging = false;
 let startX = 0;
 let scrollStart = 0;
 let autoScrollInterval;
+let pauseOnClick = false;
 
 if (speakerGrid) {
   speakerGrid.addEventListener("mousedown", (event) => {
@@ -22,16 +23,22 @@ if (speakerGrid) {
     stopAutoScroll();
   });
 
+  speakerGrid.addEventListener("click", () => {
+    pauseOnClick = true;
+    stopAutoScroll();
+  });
+
   speakerGrid.addEventListener("mouseleave", () => {
     isDragging = false;
     speakerGrid.classList.remove("active-drag");
+    pauseOnClick = false;
     startAutoScroll();
   });
 
   speakerGrid.addEventListener("mouseup", () => {
     isDragging = false;
     speakerGrid.classList.remove("active-drag");
-    startAutoScroll();
+    if (!pauseOnClick) startAutoScroll();
   });
 
   speakerGrid.addEventListener("mousemove", (event) => {
@@ -52,7 +59,7 @@ if (speakerGrid) {
   speakerGrid.addEventListener("touchend", () => {
     isDragging = false;
     speakerGrid.classList.remove("active-drag");
-    startAutoScroll();
+    if (!pauseOnClick) startAutoScroll();
   });
 
   speakerGrid.addEventListener("touchmove", (event) => {
@@ -63,8 +70,9 @@ if (speakerGrid) {
   });
 
   function startAutoScroll() {
+    if (autoScrollInterval) return;
     autoScrollInterval = setInterval(() => {
-      speakerGrid.scrollLeft += 1; // slow scroll speed
+      speakerGrid.scrollLeft += 2; // slow scroll speed
       if (speakerGrid.scrollLeft >= speakerGrid.scrollWidth / 2) {
         speakerGrid.scrollLeft = 0; // seamless loop
       }
@@ -73,6 +81,7 @@ if (speakerGrid) {
 
   function stopAutoScroll() {
     clearInterval(autoScrollInterval);
+    autoScrollInterval = null;
   }
 
   // Start auto-scroll on load
