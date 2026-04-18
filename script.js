@@ -24,6 +24,7 @@ if (speakerGrid) {
   });
 
   speakerGrid.addEventListener("click", () => {
+    if (isDragging) return;
     pauseOnClick = true;
     stopAutoScroll();
   });
@@ -45,7 +46,7 @@ if (speakerGrid) {
     if (!isDragging) return;
     event.preventDefault();
     const x = event.pageX - speakerGrid.offsetLeft;
-    const walk = (x - startX) * 2;
+    const walk = (x - startX) * 1.2;
     speakerGrid.scrollLeft = scrollStart - walk;
   });
 
@@ -65,7 +66,7 @@ if (speakerGrid) {
   speakerGrid.addEventListener("touchmove", (event) => {
     if (!isDragging) return;
     const x = event.touches[0].pageX - speakerGrid.offsetLeft;
-    const walk = (x - startX) * 2;
+    const walk = (x - startX) * 1.2;
     speakerGrid.scrollLeft = scrollStart - walk;
   });
 
