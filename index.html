@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TEDx CUSAT</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="header">
-  <div class="container nav">
-    <h2><span>TEDx</span> CUSAT</h2>
-    <nav>
+  <div class="container header-inner">
+    <a href="#" class="brand"><img src="images/logo.png" alt="TEDx CUSAT" class="header-logo"></a>
+    <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#speakers">Speakers</a>
       <a href="#" class="btn small">Get Tickets</a>
@@ -20,64 +22,170 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-content">
-    
-    <div class="hero-text">
-      <h1><span class="red">TEDx</span> CUSAT</h1>
-      <p class="sub">x = independently organized TED event</p>
-      <p class="tagline">Redefining Tomorrow</p>
-      <p class="info">Month Day | Location</p>
-      <a href="#" class="btn primary">Book Now</a>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="brand-bold">TED</span><sup class="superscript">x</sup><span class="brand-regular"> CUSAT</span></p>
+        <h1>Redefining Tomorrow</h1>
+        <p class="subtitle">x = independently organized <span class="brand-bold">TED</span> event</p>
+        <p class="hero-info">Month Day | Location</p>
+        <a href="#" class="btn primary">Book Now</a>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-image-frame">
+          <div class="hero-slider">
+            <img src="images/img1.png" alt="TEDx CUSAT stage" class="slide active">
+            <img src="images/img2.png" alt="TEDx CUSAT speaker" class="slide">
+            <img src="images/img3.png" alt="TEDx CUSAT presentation" class="slide">
+            <img src="images/img4.png" alt="TEDx CUSAT audience" class="slide">
+            <img src="images/img5.png" alt="TEDx CUSAT stage" class="slide">
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="hero-slider">
-      <img src="images/img1.png" class="slide active">
-      <img src="images/img2.png" class="slide active">
-      <img src="images/img3.png" class="slide active">
-      <img src="images/img4.png" class="slide active">
-      <img src="images/img5.png" class="slide active">
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About <span class="brand-bold">TED</span><sup class="superscript">x</sup><span class="brand-regular"> CUSAT</span></h2>
+      </div>
+
+      <div class="about-body">
+        <p>
+          <span class="brand-bold">TED</span><sup class="superscript">x</sup><span class="brand-regular">CUSAT</span> is an independently organized <span class="brand-bold">TED</span><sup class="superscript">x</sup> event hosted by the students of the Cochin University of Science and Technology (CUSAT) in Kochi, Kerala, India. Founded in 2019, the organization operates under a free license from <span class="brand-bold">TED</span> to bring together innovative minds to share ideas worth spreading, with a mission to inspire meaningful change and transform concepts into real-world actions.
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <strong>100+</strong>
+            <span>Attendees</span>
+          </div>
+          <div class="stat-card">
+            <strong>10+</strong>
+            <span>Speakers</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section id="speakers" class="speakers">
+    <div class="container">
+      <div class="section-header section-header-dark">
+        <h2>Our Speakers</h2>
+      </div>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-  <div class="container">
-    <h2 class="section-title">About <span>TEDx</span>CUSAT</h2>
-    <p>
-      TEDxCUSAT is an independently organized TEDx event hosted by the students of the Cochin University of Science and Technology (CUSAT) in Kochi, Kerala, India.Founded in 2019, the organization operates under a free license from TED to bring together innovative minds to share ideas worth spreading, with a mission to inspire meaningful change and transform concepts into real-world actions.
-    </p>
-
-    <div class="stats">
-      <div><strong>100+</strong> Attendees</div>
-      <div><strong>10+</strong> Speakers</div>
+      <div class="speaker-grid speaker-scroll">
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <!-- Duplicate for seamless loop -->
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+        <article class="card">
+          <div class="avatar"></div>
+          <p class="speaker-name">Speaker Name</p>
+          <p class="speaker-role">Role</p>
+          <p class="speaker-about">Brief bio about the speaker.</p>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<!-- SPEAKERS -->
-<section id="speakers" class="speakers">
-  <div class="container">
-    <h2 class="section-title dark">Our Speakers</h2>
-
-    <div class="speaker-scroll">
-  <div class="card">...</div>
-  <div class="card">...</div>
-  <div class="card">...</div>
-  <div class="card">...</div>
-</div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer class="footer">
-  <div class="container footer-content">
-    <p><span>TEDx</span>CUSAT</p>
-    <p>This independent TEDx event is operated under license from TED</p>
+  <div class="container footer-inner">
+    <div>
+      <img src="images/logo.png" alt="TEDx CUSAT" class="footer-logo">
+      <p class="footer-copy">This independent <span class="brand-bold">TED</span><sup class="superscript">x</sup> event is operated under license from <span class="brand-bold">TED</span>.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.facebook.com/tedxcusat21/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/tedxcusat/?hl=en"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@tedx?si=UQz3soTG33LD6Vit"><i class="fab fa-youtube"></i></a>
+    </div>
   </div>
 </footer>
 
