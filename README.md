@@ -1,5 +1,7 @@
 # TEDxCUSAT Landing Page
 
+[➡️ **Live Demo**](https://jithin-joy-arakkal.github.io/TEDxCUSAT-Landing-Page/)
+
 A modern, responsive landing page for the TEDxCUSAT independent event, featuring engaging visual elements and interactive speaker highlights.
 
 ## Overview
@@ -28,7 +30,7 @@ This project serves as the web entry-point for TEDxCUSAT, providing essential ev
 ## Getting Started
 1. **Clone the repo:**
    ```sh
-   git clone https://github.com/Jithin-Joy-Arakkal/TEDxCUSAT-Landing-Page.git
+   git clone https://github.com/jithin-joy-arakkal/TEDxCUSAT-Landing-Page.git
    ```
 2. **Open `index.html` in any browser.**
 
